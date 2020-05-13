@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F9A1F8C7246C157A0005DF55 /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A1F8C6246C157A0005DF55 /* DataSource.swift */; };
 		F9BA917F246B9139003DA626 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9BA917E246B9139003DA626 /* AppDelegate.swift */; };
 		F9BA9181246B9139003DA626 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9BA9180246B9139003DA626 /* SceneDelegate.swift */; };
 		F9BA9183246B9139003DA626 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9BA9182246B9139003DA626 /* ContentView.swift */; };
@@ -15,6 +16,9 @@
 		F9BA918B246B913A003DA626 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9BA9189246B913A003DA626 /* LaunchScreen.storyboard */; };
 		F9BA9196246B913A003DA626 /* iAnimationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9BA9195246B913A003DA626 /* iAnimationTests.swift */; };
 		F9BA91A1246B913B003DA626 /* iAnimationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9BA91A0246B913B003DA626 /* iAnimationUITests.swift */; };
+		F9BA9207246BEBF3003DA626 /* Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9BA9206246BEBF3003DA626 /* Animation.swift */; };
+		F9BA9209246BEC2D003DA626 /* AnimationList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9BA9208246BEC2D003DA626 /* AnimationList.swift */; };
+		F9BA920C246BEEE1003DA626 /* AnimationDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9BA920B246BEEE1003DA626 /* AnimationDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F9A1F8C6246C157A0005DF55 /* DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
 		F9BA917B246B9139003DA626 /* iAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iAnimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9BA917E246B9139003DA626 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F9BA9180246B9139003DA626 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +54,9 @@
 		F9BA919C246B913B003DA626 /* iAnimationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iAnimationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9BA91A0246B913B003DA626 /* iAnimationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iAnimationUITests.swift; sourceTree = "<group>"; };
 		F9BA91A2246B913B003DA626 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F9BA9206246BEBF3003DA626 /* Animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animation.swift; sourceTree = "<group>"; };
+		F9BA9208246BEC2D003DA626 /* AnimationList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationList.swift; sourceTree = "<group>"; };
+		F9BA920B246BEEE1003DA626 /* AnimationDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +107,10 @@
 		F9BA917D246B9139003DA626 /* iAnimation */ = {
 			isa = PBXGroup;
 			children = (
+				F9BA920A246BEEB9003DA626 /* ViewController */,
+				F9BA9205246BEBC6003DA626 /* Data */,
+				F9BA9204246BEBBA003DA626 /* Views */,
+				F9BA9203246BEBB2003DA626 /* Models */,
 				F9BA917E246B9139003DA626 /* AppDelegate.swift */,
 				F9BA9180246B9139003DA626 /* SceneDelegate.swift */,
 				F9BA9182246B9139003DA626 /* ContentView.swift */,
@@ -134,6 +146,38 @@
 				F9BA91A2246B913B003DA626 /* Info.plist */,
 			);
 			path = iAnimationUITests;
+			sourceTree = "<group>";
+		};
+		F9BA9203246BEBB2003DA626 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F9BA9206246BEBF3003DA626 /* Animation.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F9BA9204246BEBBA003DA626 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F9BA9208246BEC2D003DA626 /* AnimationList.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F9BA9205246BEBC6003DA626 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				F9A1F8C6246C157A0005DF55 /* DataSource.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		F9BA920A246BEEB9003DA626 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F9BA920B246BEEE1003DA626 /* AnimationDetailView.swift */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -267,8 +311,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9A1F8C7246C157A0005DF55 /* DataSource.swift in Sources */,
+				F9BA920C246BEEE1003DA626 /* AnimationDetailView.swift in Sources */,
 				F9BA917F246B9139003DA626 /* AppDelegate.swift in Sources */,
+				F9BA9209246BEC2D003DA626 /* AnimationList.swift in Sources */,
 				F9BA9181246B9139003DA626 /* SceneDelegate.swift in Sources */,
+				F9BA9207246BEBF3003DA626 /* Animation.swift in Sources */,
 				F9BA9183246B9139003DA626 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
